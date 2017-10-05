@@ -24,9 +24,9 @@ ____________________________________________________
 
   - A Activity 와 B Activity 간 공유 요소에 대한 View 들을 연결하여 화면 전환을 매끄럽게 하는 Animation 이다.
 
-  - `ContentTransitions`를 style.xml 로 설정하거나, Code 로 설정을 해줘야 한다.
+  - `ContentTransitions`를 style.xml(Theme) 로 설정하거나, Code 로 설정을 해줘야 한다.
 
-      - xml 설정
+      - style.xml(Theme) 설정
 
       ```xml
       <!-- Base application theme. -->
