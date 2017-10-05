@@ -134,7 +134,7 @@ ____________________________________________________
 
 - CustomAdapter.java
 
-  - Listener 설정과 공유요소 설정을 한다.
+  - Listener 설정과 공유 요소 설정을 한다.
 
   ```java
   public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder> {
@@ -271,7 +271,7 @@ ____________________________________________________
 
   - RecyclerView 에 보여줄 item 에 대한 xml 이다.
 
-  - `android:transitionName` 를 설정해준다.
+  - `android:transitionName` 를 설정한다.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -303,7 +303,7 @@ ____________________________________________________
 
 - activity_detail.xml
 
-  - `android:transitionName` 를 설정해준다.
+  - `android:transitionName` 를 설정한다.
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
