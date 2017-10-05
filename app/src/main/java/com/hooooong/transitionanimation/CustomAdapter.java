@@ -64,12 +64,16 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder> {
                     // <item name="android:windowContentTransitions">true</item>
                     // 2. Activity.java 에 Code 로 정의하는 것
                     // getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+
+                    // 단일 요소 설정
+                    //ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) view.getContext(), textName, "textName");
+
+                    // 다중 요소 설정
                     Pair[] pairs = new Pair[2];
                     pairs[0] = new Pair<View, String>(textId, "textId");
                     pairs[1] = new Pair<View, String>(textName, "textName");
 
                     ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) view.getContext(), pairs);
-                    //ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) view.getContext(), textName, "textName");
 
                     Intent intent = new Intent(view.getContext(), DetailActivity.class);
                     intent.putExtra("textId", textId.getText());
