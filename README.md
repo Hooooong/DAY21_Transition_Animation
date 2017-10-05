@@ -3,7 +3,7 @@
 ### 설명
 ____________________________________________________
 
-![TransitionAnimation]()
+![TransitionAnimation](https://github.com/Hooooong/DAY21_Transition_Animation/blob/master/image/contactAnimation.gif)
 
 - Transition Animation
 
@@ -20,7 +20,7 @@ ____________________________________________________
 
 - 공유 요소 전환
 
-  ![contactAnimation]()
+  ![contactAnimation](https://github.com/Hooooong/DAY21_Transition_Animation/blob/master/image/transitionAnimation.gif)
 
   - A Activity 와 B Activity 간 공유 요소에 대한 View 들을 연결하여 화면 전환을 매끄럽게 하는 Animation 이다.
 
