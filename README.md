@@ -90,47 +90,47 @@ ____________________________________________________
       startActivity(intent, options.toBundle());
       ```
 
-  ### Code Review
-  ____________________________________________________
+### Code Review
+____________________________________________________
 
-  - MainActivity.java
+- MainActivity.java
 
-    - RecyclerView 설정하고, 임의의 데이터를 설정한다.
+  - RecyclerView 설정하고, 임의의 데이터를 설정한다.
 
-    ```java
-    public class MainActivity extends AppCompatActivity {
+  ```java
+  public class MainActivity extends AppCompatActivity {
 
-        private RecyclerView recyclerView;
+      private RecyclerView recyclerView;
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.activity_main);
 
-            initView();
+          initView();
 
-        }
+      }
 
-        private void initView(){
-            recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+      private void initView(){
+          recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
 
-            CustomAdapter customAdapter = new CustomAdapter();
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            recyclerView.setAdapter(customAdapter);
+          CustomAdapter customAdapter = new CustomAdapter();
+          recyclerView.setLayoutManager(new LinearLayoutManager(this));
+          recyclerView.setAdapter(customAdapter);
 
-            customAdapter.setData(setData());
-        }
+          customAdapter.setData(setData());
+      }
 
-        private List<String> setData(){
-            List<String> data = new ArrayList<>();
+      private List<String> setData(){
+          List<String> data = new ArrayList<>();
 
-            for(int i = 0; i<100; i++){
-                data.add(i+"");
-            }
-            return data;
-        }
-    }
-    ```
+          for(int i = 0; i<100; i++){
+              data.add(i+"");
+          }
+          return data;
+      }
+  }
+  ```
 
 - CustomAdapter.java
 
