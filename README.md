@@ -9,7 +9,7 @@ ____________________________________________________
 
 - Activity 이동 간 공유 요소를 설정하여 Activity 전환을 한다.
 
-- 참조 : [ViewPager Transition](https://developer.android.com/training/animation/screen-slide.html)
+- 부가적인 내용 : [ViewPager Animation](https://developer.android.com/training/animation/screen-slide.html)
  
 ### KeyPoint
 ____________________________________________________
